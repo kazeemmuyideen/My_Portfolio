@@ -310,9 +310,11 @@ header {
     .portfolio .box-container .box img {
       height: 100%;
       width: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      filter: contrast(65%); }
       .portfolio .box-container .box img:hover {
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        filter: contrast(100%); }
 
 .contact .row {
   display: flex;
