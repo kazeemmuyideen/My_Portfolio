@@ -1,0 +1,42 @@
+.portfolio {
+  .box-container {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    // padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+      // width: 70%;
+    }
+
+    row-gap: 3rem;
+    align-items: center;
+    justify-items: center;
+
+    .box {
+      // height: 20rem;
+      // width: 26rem;
+      border-radius: 1rem;
+      margin: 2rem;
+      overflow: hidden;
+      cursor: pointer;
+
+      // @media only screen and (max-width: $bp-medium) {
+      //   width: 100%;
+      // }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

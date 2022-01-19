@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+:root {
+  --yellow: #f9ca24;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.mg-top-2 {
+  margin-top: 3rem !important;
+}
+
+//RESPONSIVE BREAKPOINT
+
+$bp-largest: 75em; //  1200px / 16px
+$bp-large: 62.5em; //  1000px / 16px
+$bp-medium: 50em; //  800px / 16px
+$bp-small: 37.5em; //  6000px / 16px
+$bp-Xsmall: 25em; //  400px /16px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 40%;
+  }
+}
+
+body {
+  background: #111;
+  overflow-x: hidden;
+
+  padding-left: 35rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 0;
+  }
+}
+
+*::selection {
+  background-color: var(--yellow);
+  color: #333;
+}
+
+// JS toggle
+@media only screen and (max-width: $bp-large) {
+  header.toggle {
+    left: 0%;
+  }
+}

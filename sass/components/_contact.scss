@@ -1,0 +1,86 @@
+.contact {
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .content {
+      flex: 1 1 30rem;
+      padding: 4rem;
+      padding-bottom: 0;
+
+      .title {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+      }
+
+      .info {
+        h3 {
+          display: flex;
+          align-items: center;
+          font-size: 2rem;
+          color: #eee;
+          padding: 1rem 0;
+          font-weight: normal;
+
+          i {
+            padding-right: 1rem;
+            color: var(--yellow);
+          }
+
+          a:link {
+            color: #eee !important;
+          }
+        }
+      }
+    }
+
+    form {
+      flex: 1 1 45rem;
+      padding: 2rem;
+      margin: 2rem;
+      margin-bottom: 4rem;
+
+      @media only screen and (max-width: $bp-Xsmall) {
+        margin: 3rem 0;
+      }
+
+      .box {
+        padding: 1.5rem;
+        margin: 1rem 0;
+        background: #333;
+        color: #fff;
+        text-transform: none;
+        font-size: 1.7rem;
+        width: 100%;
+        border-radius: 3rem;
+
+        &::placeholder {
+          text-transform: capitalize;
+        }
+      }
+
+      .message {
+        height: 15rem;
+        width: 100%;
+        background-color: #333;
+        resize: none;
+      }
+    }
+  }
+}
+
+.top {
+  position: fixed;
+  bottom: 7.5rem;
+  right: 2rem;
+  z-index: 100;
+  display: none;
+  i {
+    font-size: 3rem;
+    color: var(--yellow);
+  }
+}

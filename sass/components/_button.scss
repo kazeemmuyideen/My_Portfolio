@@ -1,0 +1,26 @@
+.btn,
+.btn:link,
+.btn:active {
+  padding: 0.7rem 3rem;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+
+  i {
+    padding: 0 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  &:hover,
+  &:visited {
+    background-color: var(--yellow);
+  }
+
+  &:hover {
+    background-color: lighter(var(--yellow));
+    background-color: lighten(#f9ca24, 7%);
+  }
+}

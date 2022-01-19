@@ -1,0 +1,59 @@
+.about {
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+    align-content: center;
+    justify-items: center;
+
+    .info {
+      flex: 1 1 48rem;
+      padding: 2rem 1rem;
+      padding-left: 6rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: var(--yellow);
+      padding: 1rem 0;
+      font-weight: normal;
+
+      span {
+        color: #eee;
+        padding: 0 0.5rem;
+      }
+    }
+
+    .counter {
+      flex: 1 1 48rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .box {
+        width: 20rem;
+        background: #222;
+        text-align: center;
+        padding: 2rem;
+        margin: 2rem;
+
+        @media only screen and (max-width: $bp-Xsmall) {
+          width: 100%;
+        }
+
+        span {
+          font-size: 4rem;
+          color: var(--yellow);
+        }
+
+        h3 {
+          font-size: 2rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
