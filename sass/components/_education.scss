@@ -16,7 +16,7 @@
     }
 
     align-items: center;
-    justify-items: center;
+    justify-items: start;
 
     align-content: center;
     justify-content: center;
@@ -25,7 +25,6 @@
     padding-left: 3rem;
 
     .box {
-      width: 27rem;
       margin: 4rem 1rem;
       padding-left: 4rem;
       border-left: 0.2rem solid #fff;
