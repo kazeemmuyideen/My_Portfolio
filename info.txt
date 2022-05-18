@@ -1,0 +1,18 @@
+					1
+ INIT:-  Is use to initialize node into new our project and will also create a package.json file.
+npm install node-sass --save-dev:- Is use to install node-sass and also save it under developer dependencies.
+
+						2
+"compile:sass": "node-sass sass/main.scss css/style.css -w"
+compile:sass:- is the code to compile sass in the package.json .
+node-sass:- is the sass script is .
+sass/main.scss:- is where the sass code is going to be written .
+css/style.css:- is where the compiled sass is going to be, and is also linked to the html.
+-w:- to keep watch of the page
+					
+						3
+npm run compile:sass :- is use to run the sass file on the terminal in the sass folder.
+
+						4
+sudo npm install live-server -g:- is use to make the project live and is also installed global package
+
