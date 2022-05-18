@@ -346,6 +346,8 @@ header {
     padding: 2rem;
     margin: 2rem;
     margin-bottom: 4rem; }
+    .contact .row form .d--none {
+      display: none; }
     @media only screen and (max-width: 25em) {
       .contact .row form {
         margin: 3rem 0; } }

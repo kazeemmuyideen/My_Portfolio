@@ -44,6 +44,10 @@
       margin: 2rem;
       margin-bottom: 4rem;
 
+      .d--none{
+        display: none;
+      }
+
       @media only screen and (max-width: $bp-Xsmall) {
         margin: 3rem 0;
       }
@@ -83,4 +87,9 @@
     font-size: 3rem;
     color: var(--yellow);
   }
+}
+
+.d--none{
+  display: none;
+  visibility: hidden;
 }
